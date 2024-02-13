@@ -3,18 +3,38 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "concurrently \"npm:next:dev\" \"npm:slicemachine\"",
+    "next:dev": "next",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "slicemachine": "start-slicemachine"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.0",
+    "@prismicio/client": "^7.3.1",
+    "@prismicio/next": "^1.5.0",
+    "@prismicio/react": "^2.7.3",
+    "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "clsx": "^2.1.0",
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.3.2",
+    "fontfaceobserver": "^2.3.0",
+    "gsap": "npm:@gsap/shockingly@^3.12.5",
+    "imagesloaded": "^5.0.0",
+    "include-media": "^2.0.0",
+    "next": "14.1.0",
+    "next-sitemap": "^4.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.1.0"
+    "sass": "^1.70.0"
   },
   "devDependencies": {
+    "@slicemachine/adapter-next": "^0.3.33",
     "eslint": "^8",
-    "eslint-config-next": "14.1.0"
+    "eslint-config-next": "14.1.0",
+    "slice-machine-ui": "^1.23.0"
   }
 }

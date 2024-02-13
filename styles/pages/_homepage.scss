@@ -1,0 +1,645 @@
+.hero {
+  padding: 8rem 2rem 0 0;
+
+  @include media("<=tablet") {
+    padding: 8rem 2rem 0 2rem;
+  }
+
+  @include media("<phone") {
+    padding: 4rem 2rem 0 2rem;
+  }
+}
+
+.hero,
+.details,
+.accommodation,
+.attractions,
+.faq,
+.contact {
+  margin-left: auto;
+  max-width: 128rem;
+}
+
+.hero_top {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  @include media("<=tablet") {
+    display: block;
+  }
+}
+
+.hero_headline {
+  .heading {
+    font-style: italic;
+  }
+
+  @include media("<=tablet") {
+    margin-bottom: 3rem;
+  }
+}
+
+.hero_posters {
+  max-width: 64rem;
+
+  @include media("<=tablet") {
+    max-width: none;
+  }
+}
+
+.hero_figure {
+  height: 14rem;
+  position: relative;
+  width: 10.5rem;
+
+  @include media("<=tablet") {
+    height: 16rem;
+    width: 12.5rem;
+  }
+}
+
+.hero_image {
+  @extend %image-cover;
+}
+
+.delimiter {
+  padding: 8rem 0 3rem;
+}
+
+.delimiter_vector {
+  width: 100%;
+}
+
+.delimiter_information {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delimiter_number {
+  @include media("<phone") {
+    display: none;
+  }
+}
+
+.delimiter_text {
+  text-transform: uppercase;
+}
+
+.hero_gallery {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+
+  @include media("<=tablet") {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.hero_gallery_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include media("<=tablet") {
+    gap: 2rem;
+  }
+}
+
+.hero_gallery_left_figure {
+  height: 69.4rem;
+  position: relative;
+  overflow: hidden;
+  width: 85.2rem;
+
+  @include media("<=tablet") {
+    width: 100%;
+  }
+
+  @include media("<phone") {
+    height: 35.3rem;
+  }
+}
+
+.hero_gallery_left_image {
+  @extend %image-cover;
+
+  height: 120%;
+}
+
+.hero_gallery_right_figure {
+  height: 87.8rem;
+  position: relative;
+  overflow: hidden;
+  width: 38.8rem;
+
+  @include media("<=tablet") {
+    width: 100%;
+  }
+
+  @include media("<phone") {
+    height: 65.1rem;
+  }
+}
+
+.hero_gallery_right_image {
+  @extend %image-cover;
+
+  height: 120%;
+}
+
+.hero_button {
+  background-color: $color-orange;
+  color: $color-white;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  padding: 4.2rem 0 5rem;
+  text-align: center;
+  width: 100%;
+
+  @extend %paragraph-74;
+
+  svg {
+    display: block;
+    margin-top: 2rem;
+
+    @include media("<phone") {
+      height: 1.5rem;
+      margin-top: 1rem;
+      width: 2rem;
+    }
+  }
+
+  &:hover {
+  }
+
+  @include media("<phone") {
+    padding: 2.4rem 4rem;
+    gap: 1rem;
+  }
+}
+
+/* DETAILS */
+.details {
+  padding-right: 2rem;
+
+  @include media("<=tablet") {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+.details_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+
+  @include media("<=tablet") {
+    grid-template-columns: 1fr;
+  }
+
+  @include media("<phone") {
+    gap: 2rem;
+  }
+}
+
+.details_card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  background-color: $color-orange;
+  padding: 4rem 2.2rem;
+
+  @include media("<phone") {
+    gap: 2rem;
+  }
+}
+
+.details_card_time {
+  color: $color-white;
+
+  p {
+    @extend %heading-60;
+  }
+}
+
+.details_card_line {
+  background-color: $color-white;
+  height: 0.3rem;
+  margin-top: 1.4rem;
+  width: 28.6rem;
+
+  @include media("<phone") {
+    height: 0.2rem;
+  }
+}
+
+.details_card_description {
+  color: $color-white;
+  text-align: center;
+
+  p {
+    @extend %paragraph-28;
+
+    font-style: italic;
+  }
+}
+
+.details_card_figure {
+  height: 46rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  @include media("<phone") {
+    height: 42rem;
+  }
+}
+
+.details_card_image {
+  @extend %image-cover;
+
+  height: 120%;
+}
+
+/* ACCOMMODATION */
+.accommodation {
+  padding-right: 2rem;
+
+  @include media("<=tablet") {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+.accommodation_slider {
+  position: relative;
+}
+
+.accommodation_slider_item {
+  cursor: pointer;
+}
+
+.accommodation_slider_name {
+  margin-bottom: 2rem;
+
+  p {
+    @extend %paragraph-30;
+  }
+}
+
+.accommodation_slider_figure {
+  height: 70rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  @include media("<=tablet") {
+    height: 80rem;
+  }
+
+  @include media("<phone") {
+    height: 37.6rem;
+  }
+}
+
+.accommodation_slider_image {
+  @extend %image-cover;
+  height: 120%;
+}
+
+.splide__arrows {
+  background-color: $color-white;
+  display: flex;
+  gap: 1rem;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  transform: none;
+}
+
+.splide__arrow {
+  background: $color-orange !important;
+  border-radius: 0 !important;
+  opacity: 1 !important;
+  height: 5rem !important;
+  width: 5rem !important;
+  transform: none !important;
+  position: static !important;
+  border: 0.2rem solid $color-orange;
+
+  svg {
+    fill: $color-white !important;
+
+    @include media("<phone") {
+      width: 50% !important;
+    }
+  }
+
+  &:hover {
+    background: transparent !important;
+    border: 0.2rem solid $color-orange;
+  }
+
+  &:hover svg {
+    fill: $color-orange !important;
+  }
+
+  @include media("<phone") {
+    width: 3rem !important;
+    height: 3rem !important;
+  }
+}
+
+.splide__pagination {
+  bottom: -4rem !important;
+  gap: 0.6rem;
+}
+
+.splide__pagination__page {
+  border: 0.15rem solid $color-orange !important;
+  background: transparent !important;
+  opacity: 1 !important;
+  border-radius: 0 !important;
+  height: 1.2rem !important;
+  width: 1.2rem !important;
+
+  &.is-active {
+    background: $color-orange !important;
+    transform: scale(1) !important;
+  }
+}
+
+.accommodation_paragraph {
+  font-size: 2.4rem;
+  font-family: $font-heading;
+  margin-top: 8rem;
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.attractions {
+  padding-right: 2rem;
+
+  @include media("<=tablet") {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+.attractions_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 3.4rem;
+
+  @include media("<phone") {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.attractions_card {
+  position: relative;
+
+  &:hover .attractions_card_name_box {
+    transform: translateX(-50%) translateY(-1.4rem);
+  }
+
+  &:hover .attractions_card_image {
+    transform: scale(1.1);
+  }
+}
+
+.attractions_card_figure {
+  height: 36rem;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  @include media("<=tablet") {
+    height: 26rem;
+  }
+
+  @include media("<phone") {
+    height: 23.8rem;
+  }
+}
+
+.attractions_card_image {
+  @extend %image-cover;
+
+  height: 120%;
+}
+
+.attractions_card_name_box {
+  background-color: $color-orange;
+  position: absolute;
+  left: 50%;
+  bottom: -1.4rem;
+  transform: translateX(-50%);
+  width: 60%;
+  transition: $transition;
+
+  @include media("<=tablet") {
+    width: 90%;
+  }
+}
+
+.attractions_card_name {
+  color: $color-white;
+  text-align: center;
+
+  p {
+    @extend %paragraph-18;
+
+    font-family: $font-heading;
+  }
+}
+
+/* FAQ */
+
+.faq {
+  padding-right: 2rem;
+  margin-top: 8rem;
+
+  @include media("<=tablet") {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.faq_wrapper {
+  background-color: $color-orange;
+  padding: 8rem 4rem;
+
+  @include media("<=tablet") {
+    padding: 8rem 2rem;
+  }
+}
+
+.faq_headline {
+  color: $color-white;
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.faq_info {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  gap: 4rem;
+
+  @include media("<=tablet") {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.faq_items {
+}
+
+.faq_item {
+  border-bottom: 0.1rem solid $color-white;
+  cursor: pointer;
+  padding: 2.4rem 0;
+
+  &:first-child {
+    border-top: 0.1rem solid $color-white;
+  }
+
+  @include media("<phone") {
+    padding: 1.6rem 0;
+  }
+}
+
+.faq_item_show {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.faq_item_question {
+  p {
+    @extend %paragraph-30;
+
+    font-family: $font-heading;
+  }
+
+  color: $color-white;
+  max-width: 48.8rem;
+}
+
+.faq_vector {
+}
+
+.faq_item_answer {
+  color: $color-white;
+  transition: all 0.4s ease;
+
+  p {
+    font-size: 2rem;
+    opacity: 0.7;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.faq_figure {
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  width: 51rem;
+
+  @include media("<=tablet") {
+    height: 56rem;
+    width: 100%;
+  }
+
+  @include media("<phone") {
+    height: 40rem;
+  }
+}
+
+.faq_image {
+  @extend %image-cover;
+}
+
+/* CONTACTS */
+
+.contact {
+  padding-right: 2rem;
+
+  @include media("<=tablet") {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.contact_wrapper {
+  background-color: $color-orange;
+  padding: 8rem 4rem;
+
+  @include media("<=tablet") {
+    padding: 0 2rem 8rem;
+  }
+}
+
+.contact_headline {
+  color: $color-white;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.contact_contacts {
+  color: $color-white;
+  margin-bottom: 4rem;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  p {
+    @extend %paragraph-28;
+  }
+}
+
+.contacts_gallery {
+  // display: flex;
+  // justify-content: space-between;
+}
+
+.contacts_gallery_figure {
+  height: 22.3rem;
+  position: relative;
+  overflow: hidden;
+  width: 18rem;
+
+  @include media("<=tablet") {
+    height: 20rem;
+    width: 18rem;
+  }
+
+  @include media("<phone") {
+    height: 18rem;
+    width: 14rem;
+  }
+}
+
+.contacts_gallery_image {
+  @extend %image-cover;
+  height: 120%;
+}

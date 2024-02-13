@@ -1,0 +1,33 @@
+{
+  "id": "image",
+  "label": "Image",
+  "format": "custom",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "image": {
+        "type": "Image",
+        "config": {
+          "label": "Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "tag": {
+        "type": "Link",
+        "config": {
+          "label": "Tag",
+          "select": "document",
+          "customtypes": ["tag"]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+
+  background-color: $color-orange;
+  color: $color-white;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+}
+
+.preloader_info {
+  flex-direction: column;
+  display: flex;
+  align-items: flex-end;
+  gap: 20rem;
+  margin-top: 16rem;
+  text-transform: uppercase;
+}
+
+.preloader_headline {
+  font-weight: 700;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.preloader_text {
+  text-align: right;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.preloader_counter {
+  position: absolute;
+  left: 0;
+  bottom: 8rem;
+}
+
+.preloader_number_wrapper {
+  padding: 0 2rem;
+}
+
+.preloader_number {
+  font-size: 16rem;
+  //   font-family: $font-heading;
+  line-height: 1;
+
+  @include media("<=tablet") {
+    font-size: 8rem;
+  }
+
+  @include media("<phone") {
+    font-size: 4rem;
+  }
+}
+
+.preloader_vector {
+  width: 100%;
+}

@@ -1,0 +1,87 @@
+.navigation {
+  background-color: $color-orange;
+  color: $color-white;
+
+  position: fixed;
+  height: 100vh;
+  padding: 8rem 4rem;
+  width: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include media("<=tablet") {
+    align-items: flex-start;
+    position: static;
+    height: auto;
+    padding: 4rem 2rem;
+    gap: 4rem;
+    width: 100vw;
+  }
+}
+
+.pin-spacer {
+  height: 0 !important;
+}
+
+.navigation_headline {
+  max-width: 53.5rem;
+  text-align: center;
+
+  @include media("<=tablet") {
+    max-width: none;
+    text-align: left;
+  }
+}
+
+.navigation_description {
+  p {
+    @extend %paragraph-30;
+    line-height: 180%;
+  }
+
+  margin: auto;
+  text-align: center;
+
+  @include media("<=tablet") {
+    max-width: none;
+    margin: 0;
+    text-align: left;
+  }
+}
+
+.navigation_links {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  @include media("<=tablet") {
+    justify-content: flex-start;
+  }
+}
+
+.navigation_buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navigation_button {
+  @extend %paragraph-28;
+
+  background-color: $color-orange;
+  border: 0.2rem solid $color-white;
+  color: $color-white;
+  display: block;
+  padding: 2rem 4rem;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: $color-white;
+    border: 0.2rem solid $color-orange;
+    color: $color-orange;
+  }
+}

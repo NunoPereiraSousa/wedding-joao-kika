@@ -1,0 +1,59 @@
+%paragraph-74 {
+  font-family: $font-heading;
+  font-style: normal;
+  font-size: 7.4rem;
+  font-weight: 400;
+  line-height: 100%;
+
+  @include media("<phone") {
+    font-size: 2.4rem;
+  }
+}
+
+%paragraph-30 {
+  font-family: $font-heading;
+  font-style: normal;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 140%;
+
+  @include media("<phone") {
+    font-size: 2.2rem;
+  }
+}
+
+%paragraph-28 {
+  font-family: $font-heading;
+  font-style: normal;
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 140%;
+
+  @include media("<phone") {
+    font-size: 2.2rem;
+  }
+}
+
+%paragraph-22 {
+  font-family: $font-heading;
+  font-style: normal;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 160%;
+
+  @include media("<phone") {
+    font-size: 1.6rem;
+  }
+}
+
+%paragraph-18 {
+  font-family: $font-body;
+  font-style: normal;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 160%;
+
+  @include media("<phone") {
+    font-size: 1.6rem;
+  }
+}

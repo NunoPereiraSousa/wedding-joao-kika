@@ -1,0 +1,41 @@
+%heading-90 {
+  font-size: 9rem;
+  font-family: $font-heading;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+
+  @include media("<=tablet") {
+    font-size: 7rem;
+  }
+
+  @include media("<phone") {
+    font-size: 6.4rem;
+  }
+}
+
+%heading-74 {
+  font-size: 7.4rem;
+  font-family: $font-heading;
+  font-style: normal;
+  line-height: 100%;
+  text-transform: capitalize;
+
+  @include media("<phone") {
+    font-size: 5rem;
+    line-height: 110%;
+  }
+}
+
+%heading-60 {
+  font-size: 6rem;
+  font-family: $font-heading;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+
+  @include media("<phone") {
+    font-size: 4.4rem;
+  }
+}
