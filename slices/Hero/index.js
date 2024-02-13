@@ -33,7 +33,7 @@ const Hero = ({ slice }) => {
                   gap: "10px",
                 },
                 800: {
-                  perPage: 3,
+                  perPage: 2,
                 },
               },
               autoScroll: {

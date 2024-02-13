@@ -67,6 +67,10 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
+
+  @include media("<phone") {
+    width: 100%;
+  }
 }
 
 .navigation_button {
@@ -83,5 +87,10 @@
     background-color: $color-white;
     border: 0.2rem solid $color-orange;
     color: $color-orange;
+  }
+
+  @include media("<phone") {
+    text-align: center;
+    width: 100%;
   }
 }

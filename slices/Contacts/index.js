@@ -24,9 +24,15 @@ const Contacts = ({ slice }) => {
           <PrismicNextLink field={slice.primary.email}>
             <PrismicRichText field={slice.primary.email_text} />
           </PrismicNextLink>
+          <a href="mailto:jramalho1990@gmail.com">
+            <p className="paragraph">Email João: jramalho1990@gmail.com</p>
+          </a>
           <PrismicNextLink field={slice.primary.mobile_phone}>
             <PrismicRichText field={slice.primary.mobile_phone_text} />
           </PrismicNextLink>
+          <a href="tel:+351927747812">
+            <p className="paragraph">Número João: 927747812</p>
+          </a>
         </div>
 
         <div className="contacts_gallery">
@@ -45,8 +51,7 @@ const Contacts = ({ slice }) => {
                   gap: "10px",
                 },
                 800: {
-                  perPage: 3,
-                  gap: "10px",
+                  perPage: 2,
                 },
               },
               autoScroll: {
