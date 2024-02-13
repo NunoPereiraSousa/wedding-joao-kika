@@ -501,7 +501,8 @@
   gap: 4rem;
 
   @include media("<=tablet") {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
   }
 }
@@ -527,6 +528,10 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+
+  @include media("<phone") {
+    gap: 4rem;
+  }
 }
 
 .faq_item_question {
