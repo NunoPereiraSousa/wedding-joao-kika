@@ -45,6 +45,7 @@
 
   @include media("<=tablet") {
     max-width: none;
+    display: none;
   }
 }
 
