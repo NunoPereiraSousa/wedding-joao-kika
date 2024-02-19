@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { useRef, useState } from "react";
 import { SplitText } from "gsap/dist/SplitText";
 import FontFaceObserver from "fontfaceobserver";
+import image from "../../public/ride.jpeg";
 
 let loadingImages = require("imagesloaded");
 
@@ -109,11 +110,18 @@ const Preloader = () => {
   return (
     <div className="preloader" ref={container}>
       <div className="preloader_info">
-        <p className="preloader_headline paragraph">we are getting married!</p>
+        <p className="preloader_headline paragraph">Welcome to our drive!</p>
+        <figure className="preloader_figure">
+          <img
+            src={image.src}
+            alt="Ride Joao e Kika"
+            className="preloader_image"
+          />
+        </figure>
         <p className="preloader_text paragraph">
           mosteiro da serra do pilar
           <br />6 de julho de 2024 <br />
-          15:40h
+          15:30h
         </p>
       </div>
 

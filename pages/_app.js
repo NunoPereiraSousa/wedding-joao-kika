@@ -97,7 +97,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      {/* <Preloader /> */}
+      <Preloader />
       <div ref={el} id="smooth-wrapper">
         <div id="smooth-content">
           <PrismicProvider

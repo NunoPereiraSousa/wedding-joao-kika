@@ -16,7 +16,7 @@
   flex-direction: column;
   display: flex;
   align-items: flex-end;
-  gap: 20rem;
+  gap: 4rem;
   margin-top: 16rem;
   text-transform: uppercase;
 }
@@ -25,6 +25,7 @@
   font-weight: 700;
   visibility: hidden;
   opacity: 0;
+  font-size: 2rem;
 }
 
 .preloader_text {
@@ -37,6 +38,16 @@
   position: absolute;
   left: 0;
   bottom: 8rem;
+}
+
+.preloader_figure {
+  width: 24rem;
+  position: relative;
+  height: 30rem;
+}
+
+.preloader_image {
+  @extend %image-cover;
 }
 
 .preloader_number_wrapper {

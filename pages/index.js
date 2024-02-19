@@ -14,12 +14,10 @@ export async function getStaticProps({ params, previewData }) {
   const page = await client.getSingle("homepage", {
     fetchLinks: "image.image, image.tag, tag.name",
   });
-  const navigation = await client.getSingle("navigation");
 
   return {
     props: {
       page,
-      navigation,
       metaTitle: page.data.meta_title,
       metaDescription: page.data.meta_description,
       metaImage: page.data.meta_image,
