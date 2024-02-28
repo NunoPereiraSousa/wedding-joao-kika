@@ -42,7 +42,7 @@ const Preloader = ({ scroll }) => {
       setImagesLoaded(true);
     });
 
-    if (fontLoaded) {
+    if (fontLoaded && imagesLoaded) {
       let childSplit = new SplitText(
         [".preloader_headline", ".preloader_text"],
         {
