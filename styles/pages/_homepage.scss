@@ -637,12 +637,26 @@
       text-align: center;
     }
   }
+
+  @include media("<phone") {
+    gap: 4rem;
+  }
 }
 
 .contact_contacts_info {
   display: flex;
   align-items: center;
   gap: 1rem;
+
+  @include media("<phone") {
+    flex-direction: column;
+  }
+
+  p {
+    @include media("<phone") {
+      display: none;
+    }
+  }
 }
 
 .contacts_gallery {
