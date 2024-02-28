@@ -22,6 +22,7 @@
 
   @include media("<phone") {
     margin-top: 4rem;
+    gap: 2rem;
   }
 }
 
@@ -48,6 +49,11 @@
   width: 24rem;
   position: relative;
   height: 30rem;
+
+  @include media("<phone") {
+    height: 24rem;
+    width: 18rem;
+  }
 }
 
 .preloader_image {
