@@ -47,7 +47,11 @@ const Navigation = ({ slice }) => {
       </div>
 
       <div className="navigation_buttons">
-        <a href="#" className="navigation_button">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSf4LijFdvTPoy2JTwvFnYcyz0OXk1bnitbdkqr4TsE0GdKRlQ/viewform?usp=send_form"
+          target="_blank"
+          className="navigation_button"
+        >
           Confirmar Presença
         </a>
       </div>

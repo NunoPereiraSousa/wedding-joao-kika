@@ -21,18 +21,20 @@ const Contacts = ({ slice }) => {
         </div>
 
         <div className="contact_contacts">
-          <PrismicNextLink field={slice.primary.email}>
-            <PrismicRichText field={slice.primary.email_text} />
-          </PrismicNextLink>
-          <a href="mailto:jramalho1990@gmail.com">
-            <p className="paragraph">Email João: jramalho1990@gmail.com</p>
-          </a>
-          <PrismicNextLink field={slice.primary.mobile_phone}>
-            <PrismicRichText field={slice.primary.mobile_phone_text} />
-          </PrismicNextLink>
-          <a href="tel:+351927747812">
-            <p className="paragraph">Número João: 927747812</p>
-          </a>
+          <div className="contact_contacts_info">
+            <PrismicNextLink field={slice.primary.email}>
+              <PrismicRichText field={slice.primary.email_text} />
+            </PrismicNextLink>
+            <p> |</p>{" "}
+            <PrismicNextLink field={slice.primary.mobile_phone}>
+              <PrismicRichText field={slice.primary.mobile_phone_text} />
+            </PrismicNextLink>
+          </div>
+          <div className="contact_contacts_info">
+            <a href="mailto:jramalho1990@gmail.com">jramalho1990@gmail.com</a>
+            <p> |</p>
+            <a href="tel:+351927747812">927747812</a>
+          </div>
         </div>
 
         <div className="contacts_gallery">

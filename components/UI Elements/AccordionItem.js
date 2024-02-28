@@ -42,18 +42,16 @@ const AccordionItem = ({ question, answer, onClick, isOpen }) => {
         style={
           isOpen
             ? {
-                height: contentHeight.current.scrollHeight,
+                height: contentHeight.current.scrollHeight + 40,
                 visibility: "visible",
                 opacity: 1,
                 paddingTop: "3rem",
-                paddingBottom: "4.4rem",
               }
             : {
                 height: "0px",
                 visibility: "hidden",
                 opacity: 0,
                 paddingTop: "0",
-                paddingBottom: "0",
               }
         }
       >

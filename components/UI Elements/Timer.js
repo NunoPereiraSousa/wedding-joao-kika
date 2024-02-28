@@ -8,7 +8,7 @@ const Timer = () => {
 
   const calculateTimeLeft = () => {
     // Parse the input date string
-    const targetDateTime = new Date(+"T00:00:00Z");
+    const targetDateTime = new Date("6 July, 2024");
 
     // Get the current date and time
     const now = new Date();
@@ -30,6 +30,7 @@ const Timer = () => {
       (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
     );
     const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+    console.log(days, hours, minutes);
 
     setDays(days);
     setHours(hours);
@@ -47,9 +48,82 @@ const Timer = () => {
 
   return (
     <div className="timer">
-      <div className="timer_days">{days}</div>
-      <div className="timer_hours">{hours}</div>
-      <div className="timer_minutes">{minutes}</div>
+      <div className="timer_info">
+        <p>Dias</p>
+        <div className="timer_days">{days}</div>
+      </div>
+      <div className="timer_vectors">
+        <svg
+          width="4"
+          height="4"
+          viewBox="0 0 4 4"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 0H4V4H0V0Z" fill="#FBF5E7" />
+        </svg>
+        <svg
+          width="4"
+          height="4"
+          viewBox="0 0 4 4"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 0H4V4H0V0Z" fill="#FBF5E7" />
+        </svg>
+      </div>
+      <div className="timer_info">
+        <p>Horas</p>
+        <div className="timer_hours">{hours}</div>
+      </div>
+      <div className="timer_vectors">
+        <svg
+          width="4"
+          height="4"
+          viewBox="0 0 4 4"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 0H4V4H0V0Z" fill="#FBF5E7" />
+        </svg>
+        <svg
+          width="4"
+          height="4"
+          viewBox="0 0 4 4"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 0H4V4H0V0Z" fill="#FBF5E7" />
+        </svg>
+      </div>
+      <div className="timer_info">
+        <p>Minutos</p>
+        <div className="timer_minutes">{minutes}</div>
+      </div>
+      <div className="timer_vectors">
+        <svg
+          width="4"
+          height="4"
+          viewBox="0 0 4 4"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 0H4V4H0V0Z" fill="#FBF5E7" />
+        </svg>
+        <svg
+          width="4"
+          height="4"
+          viewBox="0 0 4 4"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 0H4V4H0V0Z" fill="#FBF5E7" />
+        </svg>
+      </div>
+      <div className="timer_info">
+        <p>Segundos</p>
+        <div className="timer_minutes">{seconds}</div>
+      </div>
     </div>
   );
 };

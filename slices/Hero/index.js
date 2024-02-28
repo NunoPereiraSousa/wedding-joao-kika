@@ -73,7 +73,11 @@ const Hero = ({ slice }) => {
             alt={slice.primary.left_image.alt}
           />
 
-          <PrismicLink className="hero_button">
+          <PrismicLink
+            className="hero_button"
+            href={slice.primary.button_link.url}
+            target="_blank"
+          >
             {slice.primary.button_text}
             <svg
               xmlns="http://www.w3.org/2000/svg"

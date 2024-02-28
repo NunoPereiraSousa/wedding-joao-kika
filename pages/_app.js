@@ -12,6 +12,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { ScrollSmoother } from "gsap/dist/ScrollSmoother";
 import Preloader from "@/components/UI Elements/Preloader";
+import Timer from "@/components/UI Elements/Timer";
 
 const richTextComponents = {
   paragraph: ({ children }) => <Paragraph>{children}</Paragraph>,
@@ -98,6 +99,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Preloader />
+      <Timer />
       <div ref={el} id="smooth-wrapper">
         <div id="smooth-content">
           <PrismicProvider

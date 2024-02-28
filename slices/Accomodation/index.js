@@ -78,10 +78,10 @@ const Accomodation = ({ slice }) => {
           </div> */}
       </div>
 
-      <p className="accommodation_paragraph">
+      {/* <p className="accommodation_paragraph">
         Se pretende ficar num AirBnb próximo da Quinta{" "}
         <a href="#">clique aqui</a>
-      </p>
+      </p> */}
     </section>
   );
 };

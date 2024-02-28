@@ -289,7 +289,6 @@
 }
 
 .accommodation_slider_item {
-  cursor: pointer;
 }
 
 .accommodation_slider_name {
@@ -562,7 +561,6 @@
 
   p {
     font-size: 2rem;
-    opacity: 0.7;
 
     @include media("<phone") {
       font-size: 1.6rem;
@@ -630,7 +628,8 @@
   flex-direction: column;
   gap: 1rem;
 
-  p {
+  p,
+  a {
     @extend %paragraph-28;
 
     @include media("<phone") {
@@ -638,6 +637,12 @@
       text-align: center;
     }
   }
+}
+
+.contact_contacts_info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .contacts_gallery {
