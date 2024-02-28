@@ -19,6 +19,10 @@
   gap: 4rem;
   margin-top: 16rem;
   text-transform: uppercase;
+
+  @include media("<phone") {
+    margin-top: 4rem;
+  }
 }
 
 .preloader_headline {
