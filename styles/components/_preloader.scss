@@ -43,6 +43,10 @@
   position: absolute;
   left: 0;
   bottom: 8rem;
+
+  @include media("<phone") {
+    bottom: 3rem;
+  }
 }
 
 .preloader_figure {
