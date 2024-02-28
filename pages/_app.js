@@ -13,6 +13,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { ScrollSmoother } from "gsap/dist/ScrollSmoother";
 import Preloader from "@/components/UI Elements/Preloader";
 import Timer from "@/components/UI Elements/Timer";
+import { useState } from "react";
 
 const richTextComponents = {
   paragraph: ({ children }) => <Paragraph>{children}</Paragraph>,
@@ -85,12 +86,15 @@ export default function App({ Component, pageProps }) {
   const el = useRef();
   const q = gsap.utils.selector(el);
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+  const [scroll, setScroll] = useState(null);
 
   useLayoutEffect(() => {
     let smoother = ScrollSmoother.create({
       smooth: 0.35, // how long (in seconds) it takes to "catch up" to the native scroll position
       effects: true, // looks for data-speed and data-lag attributes on elements
     });
+    setScroll(smoother);
+    smoother.paused(true);
     return () => {
       smoother.kill();
     };
@@ -98,7 +102,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <Preloader />
+      <Preloader scroll={scroll} />
       <Timer />
       <div ref={el} id="smooth-wrapper">
         <div id="smooth-content">

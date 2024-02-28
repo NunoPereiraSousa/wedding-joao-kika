@@ -7,8 +7,9 @@ import image from "../../public/ride.jpeg";
 
 let loadingImages = require("imagesloaded");
 
-const Preloader = () => {
+const Preloader = ({ scroll }) => {
   gsap.registerPlugin(SplitText);
+  console.log(scroll);
 
   const [fontLoaded, setFontLoaded] = useState(false);
   const [imagesLoaded, setImagesLoaded] = useState(false);
@@ -41,7 +42,7 @@ const Preloader = () => {
       setImagesLoaded(true);
     });
 
-    if (fontLoaded && imagesLoaded) {
+    if (fontLoaded) {
       let childSplit = new SplitText(
         [".preloader_headline", ".preloader_text"],
         {
@@ -96,6 +97,9 @@ const Preloader = () => {
         autoAlpha: 0,
         duration: 0.75,
         delay: 0.5,
+        onComplete: () => {
+          scroll.paused(false);
+        },
       });
 
       tl.to(container.current, {
