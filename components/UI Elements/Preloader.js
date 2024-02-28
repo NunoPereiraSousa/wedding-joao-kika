@@ -87,7 +87,7 @@ const Preloader = ({ scroll }) => {
         snap: 100,
         onUpdate: () => {
           gsap.to(counter.current, {
-            xPercent: 80,
+            xPercent: 75,
           });
           counter.current.innerHTML = Count.val.toFixed(0);
         },

@@ -100,12 +100,12 @@ export default function Page({ page }) {
         />
         <link rel="icon" type="image/x-icon" href="favicon/favicon.ico" />
         <link rel="manifest" href="favicon/manifest.json" />
-        <meta name="msapplication-TileColor" content="#ee7d3d" />
+        <meta name="msapplication-TileColor" content="#e14c21" />
         <meta
           name="msapplication-TileImage"
           content="favicon/ms-icon-144x144.png"
         />
-        <meta name="theme-color" content="#ee7d3d" />
+        <meta name="theme-color" content="#e14c21" />
       </Head>
       <SliceZone slices={page.data.slices} components={components} />
     </>
