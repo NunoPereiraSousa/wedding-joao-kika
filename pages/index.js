@@ -20,7 +20,7 @@ export default function Page({ page }) {
           content="Casamento Kika e João  | Mosteiro da Serra do Pilar 6 de julho, às 15:30h"
         />
         <meta property="og:url" content={"https://www.nunops.com"} />
-        {/* <meta property="og:image" content={metaImage} /> */}
+        <meta property="og:image" content="favicon/ride.jpeg" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content={"https://www.nunops.com"} />
