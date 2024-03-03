@@ -35,7 +35,7 @@ const Contacts = ({ slice }) => {
           </div>
         </div>
 
-        {/* <div className="contacts_gallery">
+        <div className="contacts_gallery">
           <Splide
             options={{
               type: "loop",
@@ -74,7 +74,7 @@ const Contacts = ({ slice }) => {
               </SplideSlide>
             ))}
           </Splide>
-        </div> */}
+        </div>
       </div>
     </section>
   );
